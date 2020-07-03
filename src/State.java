@@ -2,6 +2,15 @@
 public abstract class State {
 	//Default implementations -- Remain where you are
 	private State History;
+	
+	public State getHistory() {
+		return History;
+	}
+
+	public void setHistory(State history) {
+		History = history;
+	}
+	
 	public State sleep(String name){
 		return this;
 	}
@@ -34,11 +43,5 @@ public abstract class State {
 		return new Quacking();
 	}
 
-	public State getHistory() {
-		return History;
-	}
-
-	public void setHistory(State history) {
-		History = history;
-	}
+	
 }
