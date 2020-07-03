@@ -8,7 +8,7 @@ public class Jumping extends Awake {
 	}
 	
 	public State stop(String name) {
-		System.out.println(name + " has stopped now!");
+		System.out.println(name + " was jumping and has stopped now!");
 		return new Idle();
 	}
 	public State sleep(String name) {

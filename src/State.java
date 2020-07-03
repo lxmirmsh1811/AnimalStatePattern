@@ -27,8 +27,10 @@ public abstract class State {
 		return this;
 	}
 	
-	public void display(String name, String animalKind, String color, int heartBeat) {
+	public State display(String name, String animalKind, String color, int heartBeat) {
+		
 		System.out.println("My name is " + name + ". I am a " + animalKind + " and my color is " + color+ ". My heart beats "+ heartBeat+ " times");
+		return History==null? new Idle():History ;
 //		State reEnter = getHistory();
 //		return reEnter;
 	}
